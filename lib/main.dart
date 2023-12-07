@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:university_list/counter_screen.dart';
 import 'package:university_list/presentation/pages/select_country_screen.dart';
 
 void main() {
@@ -11,11 +12,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'University List',
-        theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-          useMaterial3: true,
-        ),
-        home: const SelectCountryScreen());
+      title: 'University List',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
+      ),
+      home: const CounterScreen(),
+    );
   }
 }
